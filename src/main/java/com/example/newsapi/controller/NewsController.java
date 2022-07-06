@@ -38,7 +38,6 @@ public class NewsController {
 
 		Response response = client.newCall(request).execute();
 		return mpr.readValue(response.body().string(), JsonNode.class); 
-		//return response.body().string().;
 	}
 
 }
